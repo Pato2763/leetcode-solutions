@@ -17,9 +17,7 @@ var maxAverageRatio = function (classes, extraStudents) {
   });
 
   classesRatios.sort((a, b) => a["ratioIncrease"] - b["ratioIncrease"]);
-  console.log(classesRatios);
   const classesToAdd = classesRatios.slice(-extraStudents);
-  console.log(classesToAdd);
 
   classesToAdd.forEach((classToAdd) => {
     classes[classToAdd.classNum][0] += 1;
