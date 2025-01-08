@@ -4,9 +4,9 @@ var increasingTriplet = function (nums) {
 
   for (let i = 0; i < nums.length; i++) {
     console.log(firstNum, secondNum);
-    if (nums[i] < firstNum) {
+    if (nums[i] <= firstNum) {
       firstNum = nums[i];
-    } else if (nums[i] < secondNum) {
+    } else if (nums[i] <= secondNum) {
       secondNum = nums[i];
     } else if (nums[i] > secondNum) {
       return true;
