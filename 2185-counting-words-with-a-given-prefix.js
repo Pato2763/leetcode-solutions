@@ -8,6 +8,6 @@ const prefixCount = (words, pref) => {
   }).length;
 };
 
-// after realised that instead of the regex i could have used words.startsWith(pref)
+// after realised that instead of the regex I could have used words.startsWith(pref) for a faster solution
 
 console.log(prefixCount(words, pref));
