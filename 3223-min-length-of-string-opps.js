@@ -7,11 +7,9 @@ const minimumLength = (s) => {
       letters[s[i]] += 1;
     }
   }
-  console.log(letters);
   let length = s.length;
   Object.values(letters).forEach((value) => {
     length -= 2 * Math.floor((value - 1) / 2);
-    console.log(length);
   });
   return length;
 };
